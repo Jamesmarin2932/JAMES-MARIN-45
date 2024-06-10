@@ -1,7 +1,7 @@
 console.log(" logica conectada ");
 
-const usuario ='Admin'
-const clave = '1234'
+const usuario ='prueba'
+const clave = '12345'
 
 function pruebaBoton(){
     console.log(usuario+clave);
@@ -41,4 +41,9 @@ let resultado = document.getElementById('resultado');
         
         function limpiar() {
             resultado.value = '';
+  
+        }
+
+        function borrar(){
+                resultado.value = resultado.value.slice(0,-1);
         }
