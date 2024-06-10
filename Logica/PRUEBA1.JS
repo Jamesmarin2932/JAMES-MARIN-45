@@ -17,3 +17,28 @@ window.open('calculadora.html')
 
     console.log(`usuario ${user} clave ${contraseña}`);
 }
+
+// operacion de la calculadora//
+
+let resultado = document.getElementById('resultado');
+
+
+        function obtenernumero(numero) {
+            resultado.value += numero;
+        }
+        
+        function operacion(operacion) {
+            resultado.value += operacion;
+        }
+        
+        function calcular() {
+            try {
+                resultado.value = eval(resultado.value);
+            } catch (e) {
+                resultado.value = 'Error';
+            }
+        }
+        
+        function limpiar() {
+            resultado.value = '';
+        }
